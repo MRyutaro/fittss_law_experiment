@@ -19,16 +19,18 @@ float getVoltage( int pin ){
 }
 
 void loop(){
-    float leftVolt, centerVolt, rightVolt;
+    float left_volt, center_volt, right_volt;
 
-    leftVolt = getVoltage( LEFT_VOL_PIN );
-    centerVolt = getVoltage( CENTER_VOL_PIN );
-    rightVolt = getVoltage( RIGHT_VOL_PIN );
+    left_volt = getVoltage( LEFT_VOL_PIN );
+    center_volt = getVoltage( CENTER_VOL_PIN );
+    right_volt = getVoltage( RIGHT_VOL_PIN );
 
-    Serial.print( "left: " );
-    Serial.print( leftVolt );
-    Serial.print( " center: " );
-    Serial.print( centerVolt );
-    Serial.print( " right: " );
-    Serial.println( rightVolt );
+    // Serial.print( "left: " );
+    Serial.print( left_volt );
+    Serial.print(",");
+    // Serial.print( " center: " );
+    Serial.print( center_volt );
+    Serial.print(",");
+    // Serial.print( " right: " );
+    Serial.println( right_volt );
 }
