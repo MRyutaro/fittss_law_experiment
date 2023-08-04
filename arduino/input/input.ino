@@ -25,12 +25,9 @@ void loop(){
     center_volt = getVoltage( CENTER_VOL_PIN );
     right_volt = getVoltage( RIGHT_VOL_PIN );
 
-    // Serial.print( "left: " );
     Serial.print( left_volt );
     Serial.print(",");
-    // Serial.print( " center: " );
     Serial.print( center_volt );
     Serial.print(",");
-    // Serial.print( " right: " );
     Serial.println( right_volt );
 }
