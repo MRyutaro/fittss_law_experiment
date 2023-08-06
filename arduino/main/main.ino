@@ -11,7 +11,7 @@ float left_volt, center_volt, right_volt;
 void setup()
 {
     Serial.begin(9600);
-    Serial.setTimeout(100);
+    Serial.setTimeout(10);
     pinMode(RIGHT_LED, OUTPUT);
     pinMode(LEFT_LED, OUTPUT);
 }
